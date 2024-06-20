@@ -1,0 +1,157 @@
+:root {
+  --primary-color: #3498db; /* blue */
+  --secondary-color: #f1c40f; /* orange */
+  --font-family: Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header img.logo {
+  width: 120px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+nav img{
+  height: 65px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background-image: linear-gradient(to bottom, #f7dc6f, #ffd700);
+  height: 100vh;
+}
+
+.hero h1 {
+  font-size: 48px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 24px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.hero .cta-btn {
+  height: 35px;
+  width: 15%;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.hero.cta-btn:hover {
+  background-color: #e67e00;
+}
+
+footer {
+  background-color: var(--primary-color);
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer li {
+  margin-right: 20px;
+}
+
+footer img{
+  height: 30px;
+  width: 30px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer p {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+ .hero {
+      height: auto;
+      padding: 1rem;
+  }
+  .hero .cta-btn{
+    width: 40%;
+  }
+ .hero h1 {
+      font-size: 36px;
+  }
+ .hero p {
+      font-size: 18px;
+  }
+  footer {
+      flex-direction: column;
+  }
+  footer ul {
+      margin-bottom: 10px;
+  }
+  header img.logo {
+      width: 80px;
+      height: 20px;
+  }
+}
